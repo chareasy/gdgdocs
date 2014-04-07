@@ -22,6 +22,13 @@ https://www.gdgdocs.org/forms/d/1Ycw5cIkCzhB1ivycGYT2Z99YlaV0cvhIu52z_9Jpp1o/vie
 
 一键安装包地址:  http://gdgny.qiniudn.com/project/gdgdocs/gdgdocs.tar.gz 
 
+如果你在国内部署该服务的话，请对配置文件的内容做出如下修改：
+
+```sh 
+proxy_pass https://60.199.175.182; #之前这里是 docs.google.com 这里可以找任意一个可用的Google IP，北京机房的不行。
+proxy_set_header Host docs.google.com; #这一行是增添的
+```
+
 Installation
 --------------
 
